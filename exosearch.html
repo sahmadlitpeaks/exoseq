@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ExoSearch — ExoSeq®</title>
+<meta name="description" content="Search 95M+ curated genetic variants and find the right ExoSeq® report for any gene, condition or specialty." />
+<link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><img class="brand-mark" src="assets/img/logo.svg" alt="" /><span>ExoSeq<sup>®</sup></span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    <ul class="nav-list">
+      <li><a data-route="index.html" href="index.html">Home</a></li>
+      <li class="has-menu">
+        <a href="clinical-areas.html" data-route="clinical-areas.html">Choices</a>
+        <div class="submenu">
+          <a href="clinical-areas.html"><strong>By Clinical Area</strong><span>Cardiology, Neurology, Oncology and more</span></a>
+          <a href="clinical-areas.html#products"><strong>By Product</strong><span>Targeted, Comprehensive & Whole-Exome</span></a>
+        </div>
+      </li>
+      <li><a href="how-it-works.html" data-route="how-it-works.html">How It Works</a></li>
+      <li><a href="exosearch.html" data-route="exosearch.html">ExoSearch</a></li>
+      <li><a href="partners.html" data-route="partners.html">Partners</a></li>
+      <li><a href="about.html" data-route="about.html">About</a></li>
+    </ul>
+    <div class="nav-actions">
+      <select class="lang-select" data-lang aria-label="Language">
+        <option value="en">EN</option><option value="ar">العربية</option><option value="fr">FR</option><option value="pt">PT</option><option value="es">ES</option><option value="tr">TR</option>
+      </select>
+      <a href="request-test.html" class="btn btn-primary">Request a Test</a>
+    </div>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="container">
+    <nav class="breadcrumbs"><a href="index.html">Home</a><span>›</span><span>ExoSearch</span></nav>
+    <span class="eyebrow">ExoSearch</span>
+    <h1>Search genes, conditions and reports</h1>
+    <p class="muted" style="max-width:62ch;">Type a gene symbol, OMIM term or clinical condition. Results suggest the appropriate ExoSeq® report based on your patient's phenotype.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="search-shell reveal">
+      <h2 style="margin:0 0 .5rem;">Find the right test in seconds</h2>
+      <p>95+ million curated variants · 30+ specialties · clinician-validated</p>
+      <form class="search-form" onsubmit="event.preventDefault();">
+        <input type="search" data-search-input placeholder="e.g. BRCA1, hypertrophic cardiomyopathy, KCNQ1…" aria-label="Search ExoSearch" />
+        <button class="btn btn-accent" type="submit">Search</button>
+      </form>
+      <div class="search-tags">
+        <a href="#" data-search-tag>BRCA1</a>
+        <a href="#" data-search-tag>SCN5A</a>
+        <a href="#" data-search-tag>Marfan syndrome</a>
+        <a href="#" data-search-tag>Long QT</a>
+        <a href="#" data-search-tag>Lynch syndrome</a>
+        <a href="#" data-search-tag>MODY</a>
+        <a href="#" data-search-tag>Epilepsy</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <header class="section-head reveal" style="text-align:left; margin-bottom:1.5rem;">
+      <h2>Suggested reports</h2>
+      <p>Based on your search above. Click a row to request the matching report.</p>
+    </header>
+
+    <div data-search-results>
+      <table class="tbl">
+        <thead>
+          <tr><th>Gene / Condition</th><th>Specialty</th><th>Suggested report</th><th>Genes covered</th><th>Turnaround</th><th></th></tr>
+        </thead>
+        <tbody>
+          <tr data-row="brca1 brca2 hereditary breast ovarian cancer onco oncology">
+            <td><strong>BRCA1 / BRCA2</strong><div class="muted" style="font-size:.82rem;">Hereditary breast & ovarian cancer</div></td>
+            <td><span class="tag tag-info">Oncology</span></td>
+            <td>ExoSeq® Targeted — Hereditary Cancer</td>
+            <td>120</td>
+            <td>3–4 wks</td>
+            <td><a class="btn-link" href="request-test.html">Request</a></td>
+          </tr>
+          <tr data-row="scn5a long qt brugada arrhythmia cardio cardiology">
+            <td><strong>SCN5A</strong><div class="muted" style="font-size:.82rem;">Long QT, Brugada syndrome</div></td>
+            <td><span class="tag tag-info">Cardiology</span></td>
+            <td>ExoSeq® Targeted — Arrhythmias</td>
+            <td>15</td>
+            <td>3–4 wks</td>
+            <td><a class="btn-link" href="request-test.html">Request</a></td>
+          </tr>
+          <tr data-row="kcnq1 long qt arrhythmia cardio">
+            <td><strong>KCNQ1</strong><div class="muted" style="font-size:.82rem;">Long QT syndrome type 1</div></td>
+            <td><span class="tag tag-info">Cardiology</span></td>
+            <td>ExoSeq® Targeted — Arrhythmias</td>
+            <td>15</td>
+            <td>3–4 wks</td>
+            <td><a class="btn-link" href="request-test.html">Request</a></td>
+          </tr>
+          <tr data-row="mybpc3 mhy7 hypertrophic cardiomyopathy hcm cardio cardiology">
+            <td><strong>MYBPC3 / MYH7</strong><div class="muted" style="font-size:.82rem;">Hypertrophic cardiomyopathy</div></td>
+            <td><span class="tag tag-info">Cardiology</span></td>
+            <td>ExoSeq® Targeted — Cardiomyopathy</td>
+            <td>72</td>
+            <td>3–4 wks</td>
+            <td><a class="btn-link" href="request-test.html">Request</a></td>
+          </tr>
+          <tr data-row="fbn1 marfan syndrome aortopathy connective tissue">
+            <td><strong>FBN1</strong><div class="muted" style="font-size:.82rem;">Marfan syndrome / aortopathy</div></td>
+            <td><span class="tag tag-info">Cardiology</span></td>
+            <td>ExoSeq® Targeted — Aortopathy</td>
+            <td>28</td>
+            <td>3–4 wks</td>
+            <td><a class="btn-link" href="request-test.html">Request</a></td>
+          </tr>
+          <tr data-row="mlh1 msh2 lynch syndrome colorectal cancer onco oncology">
+            <td><strong>MLH1 / MSH2</strong><div class="muted" style="font-size:.82rem;">Lynch syndrome (HNPCC)</div></td>
+            <td><span class="tag tag-info">Oncology</span></td>
+            <td>ExoSeq® Targeted — Lynch & Colorectal</td>
+            <td>22</td>
+            <td>3–4 wks</td>
+            <td><a class="btn-link" href="request-test.html">Request</a></td>
+          </tr>
+          <tr data-row="scn1a dravet epilepsy seizure pediatric neurology neuro">
+            <td><strong>SCN1A</strong><div class="muted" style="font-size:.82rem;">Dravet syndrome / epilepsy</div></td>
+            <td><span class="tag tag-info">Neurology</span></td>
+            <td>ExoSeq® Comprehensive — Epilepsy</td>
+            <td>320</td>
+            <td>4–5 wks</td>
+            <td><a class="btn-link" href="request-test.html">Request</a></td>
+          </tr>
+          <tr data-row="dmd duchenne muscular dystrophy neuromuscular">
+            <td><strong>DMD</strong><div class="muted" style="font-size:.82rem;">Duchenne / Becker MD</div></td>
+            <td><span class="tag tag-info">Neuromuscular</span></td>
+            <td>ExoSeq® Targeted — Muscular Dystrophies</td>
+            <td>120</td>
+            <td>4 wks</td>
+            <td><a class="btn-link" href="request-test.html">Request</a></td>
+          </tr>
+          <tr data-row="hnf1a hnf4a mody endocrinology endo diabetes">
+            <td><strong>HNF1A / HNF4A</strong><div class="muted" style="font-size:.82rem;">Maturity-Onset Diabetes (MODY)</div></td>
+            <td><span class="tag tag-info">Endocrinology</span></td>
+            <td>ExoSeq® Targeted — MODY</td>
+            <td>14</td>
+            <td>3–4 wks</td>
+            <td><a class="btn-link" href="request-test.html">Request</a></td>
+          </tr>
+          <tr data-row="undiagnosed whole exome wes trio pediatric global delay">
+            <td><strong>Undiagnosed disease</strong><div class="muted" style="font-size:.82rem;">Atypical or multi-system phenotype</div></td>
+            <td><span class="tag tag-info">All specialties</span></td>
+            <td>ExoSeq® Whole Exome (Trio recommended)</td>
+            <td>~20,000</td>
+            <td>5–6 wks</td>
+            <td><a class="btn-link" href="request-test.html">Request</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <div data-empty class="card text-center mt-3" style="display:none;">
+        <h3>No matches found</h3>
+        <p class="muted">Try a different gene name, condition or specialty — or contact our clinical team for guidance.</p>
+        <a href="about.html#contact" class="btn btn-ghost">Contact us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container split">
+    <div class="reveal">
+      <span class="eyebrow">Behind the search</span>
+      <h2>What's in our variant database</h2>
+      <p>ExoSearch is powered by a continuously updated knowledge base curated by our clinical scientists.</p>
+      <ul class="list-check">
+        <li>95M+ variants from population, clinical and literature sources</li>
+        <li>HPO-driven phenotype matching</li>
+        <li>ACMG/AMP-aligned classifications and re-evaluations</li>
+        <li>Specialty refinements from our medical advisory board</li>
+      </ul>
+    </div>
+    <div class="reveal">
+      <div class="grid grid-2">
+        <div class="card text-center"><strong style="font-size:1.8rem; color:var(--c-primary-700); display:block;">95M+</strong><span class="muted">Curated variants</span></div>
+        <div class="card text-center"><strong style="font-size:1.8rem; color:var(--c-primary-700); display:block;">20K+</strong><span class="muted">Genes</span></div>
+        <div class="card text-center"><strong style="font-size:1.8rem; color:var(--c-primary-700); display:block;">7,500+</strong><span class="muted">Conditions</span></div>
+        <div class="card text-center"><strong style="font-size:1.8rem; color:var(--c-primary-700); display:block;">Daily</strong><span class="muted">Evidence updates</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html"><img class="brand-mark" src="assets/img/logo.svg" alt="" /><span>ExoSeq<sup>®</sup></span></a>
+        <p class="mt-2">Reliable genetic answers for clinicians and patients.</p>
+      </div>
+      <div><h4>Choices</h4><ul><li><a href="clinical-areas.html">By Clinical Area</a></li><li><a href="clinical-areas.html#products">By Product</a></li><li><a href="exosearch.html">ExoSearch</a></li></ul></div>
+      <div><h4>Process</h4><ul><li><a href="how-it-works.html">How It Works</a></li><li><a href="request-test.html">Request a Test</a></li><li><a href="how-it-works.html#counseling">Genetic Counseling</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="partners.html">Partners</a></li><li><a href="about.html#contact">Contact</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li><li><a href="#">Quality Statement</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="y"></span> ExoSeq® · Providing reliable genetic answers</span></div>
+  </div>
+</footer>
+
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
